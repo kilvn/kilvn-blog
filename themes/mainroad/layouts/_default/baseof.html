@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{{ if .IsHome }}{{ .Title }}{{- if .Site.Params.indexsubtitle }}{{ .Site.Params.separate | default "_" }}{{ .Site.Params.indexsubtitle }}{{- end }}{{else}}{{ .Title }}{{ .Site.Params.separate }}{{ .Site.Title }}{{end}}</title>
+	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{else}}{{ .Params.Description }}{{end}}">
+	<meta name="keywords" content="{{if .IsHome}}{{ $.Site.Params.keywords }}{{else}}{{.Keywords}}{{end}}">
+	{{ if .Site.Params.opengraph }}{{ template "_internal/opengraph.html" . }}{{ end }}
+	{{ if .Site.Params.twitter_cards }}{{ template "_internal/twitter_cards.html" . }}{{ end }}
+	<link rel="dns-prefetch" href="//lib.baomitu.com">
+	{{- range .AlternativeOutputFormats }}
+	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink | safeURL }}">
+	{{- end }}
+	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  	<script>
+      	window.__deel = {
+        	jquery: {{ "js/jquery-1.8.3.min.js" | relURL }},
+        };
+  	</script>
+	<script type="text/javascript" src="{{ "js/scripts.js" | relURL }}"></script>
+	<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
+	{{- if not .Site.IsServer }}
+		{{ template "_internal/google_analytics_async.html" . }}
+	{{- end }}
+</head>
+<body class="body">
+	<div class="container container-outer">
+		{{ partial "header" . }}
+		<div class="wrapper flex">
+			{{ block "main" . }}
+				{{ with .Content }}
+				<div class="page-content">
+					{{ . }}
+				</div>
+				{{ end }}
+			{{ end }}
+          	{{ partial "sidebar.html" . }}
+		</div>
+		{{ partial "footer" . }}
+	</div>
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+		label: "{{ T "menu_label" }}",
+	});
+</script>
+{{- partial "mathjax.html" . -}}
+</body>
+</html>

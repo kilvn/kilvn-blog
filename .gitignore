@@ -1,0 +1,5 @@
+/public/*
+composer.lock
+.phpstorm*
+/.idea
+/vendor

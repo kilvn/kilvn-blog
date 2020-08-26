@@ -1,0 +1,12 @@
+{{- if .Site.Data.links }}
+{{- if not (eq (len .Site.Data.links) 0) }}
+<div class="widget-taglist widget">
+	<h4 class="widget__title">{{ T "friendlink_title" }}</h4>
+	<div class="widget__content">
+		{{- range .Site.Data.links }}
+		<a class="widget-taglist__link widget__link btn" href="{{ .link | lower }}" title="{{ .title | humanize }}" target="_blank">{{ .title }}</a>
+		{{- end }}
+	</div>
+</div>
+{{- end }}
+{{- end }}

@@ -1,0 +1,97 @@
+baseurl = "https://blog.kilvn.com/"
+#baseurl = "/"
+disableHugoGeneratorInject = true
+languageCode = "zh-cn"
+defaultContentLanguage = "cn" # i18n 语言包配置
+title = "东子博客"
+author = "Kilvn"
+theme = "mainroad"
+#uglyurls = true # 开启.html后缀
+paginate = "10"
+paginatePath = "page"
+disqusShortname = "gitalk" # Enable comments by entering your Disqus shortname
+googleAnalytics = "" # Enable Google Analytics by entering your tracking i
+enableEmoji = true
+enableRobotsTXT = true
+buildDrafts = true
+buildFuture = true
+
+[Author] # Used in authorbox
+  name = "Kilvn"
+  bio = "Kilvn's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
+  avatar = "img/kilvn.png"
+
+[Params]
+    indexsubtitle = "专业跪键盘，偶尔写BUG。"
+    subtitle = "辣鸡博客~"
+    subdesc = "本博客的文章一般都是抄的"
+    keywords = "东子,kilvn,逆天西瓜,东子博客"
+    description = "A description that will appear as a default if front matter does not exist"
+    separate = "_"
+    opengraph = true # Enable OpenGraph if true
+    twitter_cards = false # Enable Twitter Cards if true
+    readmore = true # Show "Read more" button in list if true
+    homeLayout = "content + sidebar" # Configure home page layout
+    listLayout = "content + sidebar" # Configure layout for list pages
+    singleLayout = "content + sidebar" # Configure layout for single pages
+    authorbox = true # Show authorbox at bottom of pages if true
+    toc = true # Enable Table of Contents
+    post_navigation = true # Show post navigation at bottom of pages if true
+    post_meta = ["date", "categories", "translations"] # Order of post meta information    
+    postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget
+    #postSections = ["blog", "news"] # alternative that shows more than one section's pages
+    dateformat = "2006年01月02日" # change the format of dates
+    #mathjax = true # Enable MathJax
+    #mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" # Specify MathJax path
+    #mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "left"  # Configure layout for list pages
+  single = false # Configure layout for single pages
+  # Enable widgets in given order
+  #   widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+
+[Params.widgets]
+    search = false # Enable "Search" widget
+    recent_articles = true # Enable "Recent articles" widget
+    recent_articles_num = 5 # Set the number of articles in the "Recent articles" widget
+    categories = true # Enable "Categories" widget
+    tags = true # Enable "Tags" widget
+    tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)
+
+    # Enable "Social" widget, if any of "social_*" set a value
+    social_facebook = ""
+    social_twitter = ""
+    social_linkedin = ""
+    social_telegram = ""
+    social_github = "kilvn"
+    social_email = "content@kilvn.com"
+    social_google_plus = ""
+
+[permalinks]
+    post = "/post/:slug/"
+    page = "/:slug/"
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+
+[languages.cn]
+weight = 1
+languageName = "Chinese"
+
+[[languages.cn.menu.main]]
+url    = "/"
+name   = "首 页"
+weight = 1
+
+[[languages.cn.menu.main]]
+url    = "/archives/"
+name   = "归 档"
+weight = 2
+
+[[languages.cn.menu.main]]
+url    = "/about/"
+name   = "关 于"
+weight = 3

@@ -1,0 +1,12 @@
+{{- if .Site.Params.friendlink }}
+{{- if not (eq (len .Site.Params.friendlink) 0) }}
+<div class="widget-taglist widget">
+	<h4 class="widget__title">{{ T "friendlink_title" }}</h4>
+	<div class="widget__content">
+		{{- range $name, $link := .Site.Params.friendlink }}
+		<a class="widget-taglist__link widget__link btn" href="{{ $link | lower }}" title="{{ $name | humanize }}" target="_blank">{{ $name }}</a>
+		{{- end }}
+	</div>
+</div>
+{{- end }}
+{{- end }}

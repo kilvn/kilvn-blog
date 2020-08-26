@@ -1,0 +1,39 @@
+<footer class="footer">
+	<div class="container container-inner">
+		<div class="footer__copyright">
+          <span class="footer__copyright-credits" style="float: left;">&copy; 2012-{{ now.Format "2006" }} <a href="{{ .Site.BaseURL | relLangURL }}">{{ .Site.Title }}</a>. &nbsp; <a href="http://www.beian.miit.gov.cn/" target="_blank" rel="nofllow">粤ICP备16037778号-1</a> &nbsp; {{ .Site.Params.subdesc }}</span>
+          <span class="footer__copyright-credits" style="float: right;">{{ T "footer_credits" | safeHTML }}</span>
+      	</div>
+	</div>
+  	
+	<div class="bottom_tools">
+        <!--div class="qr_tool">二维码</div-->
+        <a id="feedback" href="{{ "about" | relURL }}" title="意见反馈">意见反馈</a>
+        <a id="scrollUp" href="javascript:;" title="飞回顶部"></a>
+        <!--img class="qr_img" src="{{ "img/qr_img.png" | relURL }}"-->
+    </div>
+</footer>
+	<script>
+		(function(){
+			    var bp = document.createElement('script');
+			    var curProtocol = window.location.protocol.split(':')[0];
+			    if (curProtocol === 'https') {
+				            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+				        }
+			    else {
+				            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+				        }
+			    var s = document.getElementsByTagName("script")[0];
+			    s.parentNode.insertBefore(bp, s);
+		})();
+	</script>
+	<script>
+		var _hmt = _hmt || [];
+(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?4d09ca1cb1ab3a94f946f7592e796ba3";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+})();
+	</script>
+
