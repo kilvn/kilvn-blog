@@ -48,9 +48,9 @@ UUID 使用的是 122 位的熵，两个 UUID 撞上的概率大约为 10^-37，
 
 数据结构老师告诉我们，没有任何一种数据结构是全场景最优的，所以这里也要提一下使用 UUID 作为主键的缺点：
 
-4. UUID 往往是使用字符串存储，查询的效率比较低。
+1. UUID 往往是使用字符串存储，查询的效率比较低。
 
-5. 不符合 MySQL 官方建议的：If the primary key is long, the secondary indexes use more space, so it is advantageous to have a short primary key.
+2. 不符合 MySQL 官方建议的：If the primary key is long, the secondary indexes use more space, so it is advantageous to have a short primary key.
 综上，我们可以很容易想到 UUID 在一些大量的，不需要排序，需要统一化长度的场景中比较适用，如 OJ 的每个用户的提交，商品的唯一标识码等。
 
 ## Use UUID as PK
