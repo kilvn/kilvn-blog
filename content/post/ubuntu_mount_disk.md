@@ -52,7 +52,7 @@ umount /dev/sdb
 blkid /dev/sdb
 ```
 
-得到：`/dev/sdb: UUID="0001D3CE0001E53B" TYPE="ntfs"`
+得到：`/dev/sdb: UUID="0001D3CE0001E53B" TYPE="ext4"`
 
 **修改分区文件**
 
@@ -63,13 +63,13 @@ nano /etc/fstab
 我们按照文件中的格式添加一行如下内容：
 
 ```shell
-UUID=0001D3CE0001E53B /home/ubuntu/NewDisk ntfs defaults 0 0
+UUID=0001D3CE0001E53B /data ext4 defaults 0 0
 ```
 
 **注意：如果是云服务器，不用获取UUID，直接写磁盘卷路径**
 
 ```shell
-/dev/sdb /home/ubuntu/NewDisk ntfs defaults 0 0
+/dev/sdb /data ext4 defaults 0 0
 ```
 
 第一列为UUID；
@@ -96,6 +96,6 @@ mount -a
 df -kh
 ```
 
-可以看见`/dev/sdb`已经成功挂载到了`/home/ubuntu/NewDisk`目录下了，以后开机就会自动挂载。
+可以看见`/dev/sdb`已经成功挂载到了`/data`目录下了，以后开机就会自动挂载。
 
 
