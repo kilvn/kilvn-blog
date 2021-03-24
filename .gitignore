@@ -3,3 +3,5 @@ composer.lock
 .phpstorm*
 /.idea
 /vendor
+/node_modules
+
