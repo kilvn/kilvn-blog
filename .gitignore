@@ -4,4 +4,4 @@ composer.lock
 /.idea
 /vendor
 /node_modules
-
+package-lock.json
