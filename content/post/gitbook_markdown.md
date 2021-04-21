@@ -5,7 +5,7 @@ description: "GitBook是一个命令行工具（Node.js库），我们可以借�
 date: "2017-03-23T09:25:06Z"
 thumbnail: ""
 categories:
-  - "tools"
+  - "实用工具"
 tags:
   - "gitbook"
   - "markdown"

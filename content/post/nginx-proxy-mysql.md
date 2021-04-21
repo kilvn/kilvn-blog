@@ -5,7 +5,7 @@ description: ""
 date: "2020-03-03T20:08:57+08:00"
 thumbnail: ""
 categories:
-  - "Develop"
+  - "编程开发"
 tags:
   - "nginx"
   - "mysql"

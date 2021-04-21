@@ -5,7 +5,7 @@ description: "最近在用 Laravel 5.6 做一个项目，涉及到用户表的�
 date: "2021-01-25T03:08:36Z"
 thumbnail: ""
 categories:
-  - "Develop"
+  - "编程开发"
 tags:
   - "Laravel"
   - "UUID"

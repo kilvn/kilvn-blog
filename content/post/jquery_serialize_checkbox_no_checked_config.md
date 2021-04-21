@@ -5,7 +5,7 @@ description: "jquery的$(form).serialize()不会提交未选中的checkbox，解
 date: "2018-09-17T14:18:54+08:00"
 thumbnail: ""
 categories:
-  - "develop"
+  - "编程开发"
 tags:
   - "jquery"
   - "serialize"

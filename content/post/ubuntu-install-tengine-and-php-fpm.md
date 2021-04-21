@@ -5,7 +5,7 @@ description: "Tengine是由淘宝网发起的Web服务器项目。它在Nginx的
 date: "2019-04-24T19:12:32+08:00"
 thumbnail: ""
 categories:
-  - "Develop"
+  - "编程开发"
 tags:
   - "ubuntu"
   - "tengine"

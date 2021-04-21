@@ -5,7 +5,7 @@ description: "这篇文章主要介绍使用PHP开发接口，数据实现RSA加
 date: "2018-10-19T23:41:42+08:00"
 thumbnail: ""
 categories:
-  - "develop"
+  - "编程开发"
 tags:
   - "php"
   - "rsa"

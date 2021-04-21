@@ -5,7 +5,7 @@ description: "这里用到了 canvg.js 这个goole发布的插件，原理是把
 date: "2019-03-30T01:25:36+08:00"
 thumbnail: ""
 categories:
-  - "Develop"
+  - "编程开发"
 tags:
   - "svg"
   - "canvas"

@@ -26,10 +26,6 @@
 </main>
 
 <style>
-	.post__content {max-width: 678px;}
-	@media screen and (max-width: 767px) {
-		.post__content {max-width: initial;}
-	}
 	pre {color: #fff;border: inherit;padding: 1rem;margin-bottom: 1rem;}
 </style>
 <script>
@@ -41,6 +37,6 @@ window.onload = function() {
 	}
 }
 </script>
-<script src="/plugins/code-prettify/src/run_prettify.js?autoload=true&skin=desert&lang=css&linenums=true"></script>
+<script src="{{ .Site.BaseURL }}/plugins/code-prettify/src/run_prettify.js?autoload=true&skin=desert&lang=css&linenums=true"></script>
 
 {{ end }}

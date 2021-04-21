@@ -15,10 +15,11 @@ enableEmoji = true
 enableRobotsTXT = true
 buildDrafts = true
 buildFuture = true
+summaryLength = 180
 
 [Author] # Used in authorbox
   name = "Kilvn"
-  bio = "Kilvn's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
+  bio = "这家伙太懒，什么也没留下."
   avatar = "img/kilvn.png"
 
 [Params]
@@ -53,7 +54,7 @@ buildFuture = true
   #   widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
 
 [Params.widgets]
-    search = false # Enable "Search" widget
+    search = true # Enable "Search" widget
     recent_articles = true # Enable "Recent articles" widget
     recent_articles_num = 5 # Set the number of articles in the "Recent articles" widget
     categories = true # Enable "Categories" widget
@@ -81,17 +82,18 @@ buildFuture = true
 weight = 1
 languageName = "Chinese"
 
-[[languages.cn.menu.main]]
+[menu]
+[[menu.main]]
 url    = "/"
 name   = "首 页"
 weight = 1
 
-[[languages.cn.menu.main]]
+[[menu.main]]
 url    = "/archives/"
 name   = "归 档"
 weight = 2
 
-[[languages.cn.menu.main]]
+[[menu.main]]
 url    = "/about/"
 name   = "关 于"
 weight = 3

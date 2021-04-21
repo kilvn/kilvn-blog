@@ -5,7 +5,7 @@ description: "echo 'sql语句' | mysql -u用户名 -p密码 数据库 > /任意�
 date: "2020-03-31T23:17:04+08:00"
 thumbnail: ""
 categories:
-  - "Develop"
+  - "编程开发"
 tags:
   - "shell"
   - "mysql"

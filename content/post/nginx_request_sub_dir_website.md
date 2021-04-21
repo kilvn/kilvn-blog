@@ -5,7 +5,7 @@ description: "laravel项目放在 aaa 下，目的是需要通过局域网IP访�
 date: "2019-07-19T17:54:24+08:00"
 thumbnail: ""
 categories:
-  - "Develop"
+  - "编程开发"
 tags:
   - "nginx"
   - "laravel"

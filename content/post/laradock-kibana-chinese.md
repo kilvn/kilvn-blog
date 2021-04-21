@@ -5,7 +5,7 @@ description: "在kibana配置文件kibana.yml中加入一行 i18n.locale: 'zh-CN
 date: "2021-03-24T08:21:32Z"
 thumbnail: ""
 categories:
-  - "Develop"
+  - "编程开发"
 tags:
   - "laradock"
   - "kibana"

@@ -5,7 +5,7 @@ description: "其中第一列为UUID, 第二列为挂载目录（该目录必须
 date: "2021-03-02T02:58:08Z"
 thumbnail: ""
 categories:
-  - "Develop"
+  - "编程开发"
 tags:
   - "ubuntu"
 ---

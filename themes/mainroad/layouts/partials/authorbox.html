@@ -10,7 +10,7 @@
 	{{- end }}
 	{{- with .Site.Author.name }}
 	<div class="authorbox__header">
-		<span class="authorbox__name">{{ T "authorbox_name" . }}</span>
+		<a href="{{ $.Site.BaseURL | relLangURL }}" class="authorbox__name" onclick="return false;">{{ $.Site.Author.name }}</a>
 	</div>
 	{{- end }}
 	{{- with .Site.Author.bio }}

@@ -8,6 +8,8 @@
 		<a class="widget-taglist__link widget__link btn" href="{{ "tags/" | relLangURL }}{{ $name | urlize | lower }}" title="{{ $name | humanize }}">{{ $name | humanize }}{{ if $.Site.Params.widgets.tags_counter }} ({{ $items.Count }}){{ end }}</a>
 		{{- end }}
 	</div>
+	<ul class="bottom_border_left"></ul>
+	<ul class="bottom_border_right"></ul>
 </div>
 {{- end }}
 {{- end }}

@@ -5,7 +5,7 @@ description: "进程、线程和协程是三个在多任务处理中常听到的
 date: "2018-09-05T23:35:29Z"
 thumbnail: ""
 categories:
-  - "develop"
+  - "编程开发"
 tags:
   - "进程"
   - "线程"

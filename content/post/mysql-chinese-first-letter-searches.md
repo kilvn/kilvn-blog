@@ -5,7 +5,7 @@ slug: "mysql-chinese-first-letter-searches"
 description: "实现按拼音首字母检索一种是直接增加字段存储名称首字母，但是这样会使表都一个字段，每次录入都要转换 这是通常的做法，另一种是接下来介绍的这种，按照汉字编码排序来实现的，无需给表多增字段。"
 thumbnail: ""
 categories:
-  - "develop"
+  - "编程开发"
 tags:
   - "mysql"
 ---
