@@ -15,7 +15,8 @@ enableEmoji = true
 enableRobotsTXT = true
 buildDrafts = true
 buildFuture = true
-#summaryLength = 180
+truncated = true
+summaryLength = 10
 
 [Author] # Used in authorbox
   name = "Kilvn"
@@ -25,9 +26,9 @@ buildFuture = true
 [Params]
     indexsubtitle = "专业跪键盘，偶尔写BUG。"
     subtitle = "辣鸡博客~"
-    subdesc = "本博客的文章一般都是抄的"
+    subdesc = "本博客的文章一般都是抄的。"
     keywords = "东子,kilvn,逆天西瓜,东子博客"
-    description = "A description that will appear as a default if front matter does not exist"
+    description = "东子,kilvn,逆天西瓜,东子博客"
     separate = "_"
     opengraph = true # Enable OpenGraph if true
     twitter_cards = false # Enable Twitter Cards if true
@@ -49,7 +50,7 @@ buildFuture = true
 [Params.sidebar]
   home = "right" # Configure layout for home page
   list = "left"  # Configure layout for list pages
-  single = false # Configure layout for single pages
+  single = true # Configure layout for single pages
   # Enable widgets in given order
   #   widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
 
