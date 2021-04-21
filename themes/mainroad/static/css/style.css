@@ -1387,12 +1387,14 @@ textarea {
 
 	.menu__item {
 		display: inline-block;
-		margin-right: 0;
+		margin: 0;
+		width: calc(100% / 3);
 	}
 
 	.menu__link {
 		/*min-width: 90px;*/
-		width: calc(100% / 3);
+		margin: 0;
+		width: 100%;
 	}
 
 	.post__content {
