@@ -200,7 +200,7 @@ server_name _;
 ### tengine 完美卸载
 
 ```
-apt remove nginx nginx-common && apt purge nginx nginx-common && apt autoremove && apt remove nginx-full nginx-common
+rm -rf /etc/nginx/ /usr/sbin/nginx
 ```
 
 参考文章:[tengine配置虚拟主机的三种方式](https://blog.csdn.net/hll19950830/article/details/79751482)
