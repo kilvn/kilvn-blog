@@ -20,14 +20,14 @@ Tengine完全兼容Nginx，因此可以参照Nginx的方式来配置Tengine。
 
 Tengine官方下载地址：[http://tengine.taobao.org/download_cn.html](http://tengine.taobao.org/download_cn.html)
 
-目前最新版本为 tengine-2.3.2。
+目前最新版本为 tengine-2.3.3。
 
 ### tengine 编译安装
 
 ```
-wget http://tengine.taobao.org/download/tengine-2.3.2.tar.gz
-tar -zxvf tengine-2.3.2.tar.gz
-cd tengine-2.3.2
+wget http://tengine.taobao.org/download/tengine-2.3.3.tar.gz
+tar -zxvf tengine-2.3.3.tar.gz
+cd tengine-2.3.3
 apt update
 
 # 安装gcc编译器 make，众多依赖包
