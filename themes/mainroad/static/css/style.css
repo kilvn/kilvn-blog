@@ -1132,6 +1132,7 @@ textarea {
 	border-bottom: 1px solid #ebebeb;
 	padding: 15px 20px 12px;
 	margin: 0;
+	background-color: #fff;
 }
 
 .widget .widget__content {
@@ -1320,6 +1321,8 @@ textarea {
 	background-image: url(../img/bottom_tools.png);
 	background-position: -192px -46px;
 }
+
+pre.prettyprint {max-width: 680px !important;}
 
 /*** Media Queries ***/
 @media screen and (max-width: 1475px) {
