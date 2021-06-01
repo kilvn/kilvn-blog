@@ -35,7 +35,5 @@ Phper, Gopher. 酷爱Golang(学习中)。
 
 #### 联系方式
 
-微信：kkilvn
-
-Q  Q：27535794
+微信：amazing_watermelon
 
