@@ -8,6 +8,9 @@
 		{{- if in (.Param "listLayout") "left sidebar" }} sidebar--left{{ end }}
 	{{- end }}">
 	{{ partial "widgets/search.html" . }}
+	{{- if .IsHome }}
+	{{ partial "widgets/document.html" . }}
+	{{- end }}
 	{{ partial "widgets/recent.html" . }}
 	{{ partial "widgets/categories.html" . }}
 	{{ partial "widgets/social.html" . }}

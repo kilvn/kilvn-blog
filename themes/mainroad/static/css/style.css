@@ -1185,6 +1185,19 @@ textarea {
 	cursor: text;
 }
 
+/* Document widget */
+.widget-document__item {
+	border-bottom: 0;
+	padding: 0;
+}
+
+.widget-document__link {
+	display: inline-block;
+        background-color: lightsalmon;
+        margin: auto 1px 7px;
+        padding: 5px;
+}
+
 /* Social widget */
 .widget-social__item {
 	padding: 0;
