@@ -112,7 +112,15 @@ $ tree . #查看建立的目录和文件
 
 每个目录中，都有一个README.md文件，相当于一章的说明。
 
-1.3 设置首页链接和中文语言
+1.3 安装gitbook需要的npm包
+
+在当前目录下执行命令：
+
+```shell
+gitbook install
+```
+
+1.4 设置首页链接和中文语言
 
 编辑 `book.json` 文件，设置 `language` 和 `links`：
 
