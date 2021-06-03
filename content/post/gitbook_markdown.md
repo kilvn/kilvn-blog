@@ -112,6 +112,21 @@ $ tree . #查看建立的目录和文件
 
 每个目录中，都有一个README.md文件，相当于一章的说明。
 
+1.3 设置首页链接和中文语言
+
+编辑 `book.json` 文件，设置 `language` 和 `links`：
+
+```json
+{
+  "language": "zh-hans",
+  "links": {
+    "sidebar": {
+      "Home": "https://docs.kilvn.com/"
+    }
+  },
+}
+```
+
 2. 生成图书
 
 2.1 输出为静态网站
