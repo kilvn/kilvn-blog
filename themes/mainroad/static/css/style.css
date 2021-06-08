@@ -1476,6 +1476,11 @@ pre.prettyprint {max-width: 680px !important;}
 		margin: 0 0 0 20px;
 	}
 
+	article.post .adsbygoogle {
+		width: 100% !important;
+		margin-left: auto !important;
+	}
+
 	.sidebar {
 		display: none;
 	}

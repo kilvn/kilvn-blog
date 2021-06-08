@@ -56,7 +56,7 @@
 
 # Footer
 - id: footer_credits
-  translation: "自豪地采用 <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> {{ .Hugo.Version }}，<a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a> 主题。"
+  translation: "由 <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> {{ .Hugo.Version }}强力驱动，主题：<a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a>。"
 
 # 404
 - id: 404_title
