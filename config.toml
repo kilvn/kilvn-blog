@@ -15,7 +15,7 @@ enableEmoji = true
 enableRobotsTXT = true
 buildDrafts = true
 buildFuture = true
-truncated = true
+truncated = false
 summaryLength = 10
 
 [Author] # Used in authorbox
