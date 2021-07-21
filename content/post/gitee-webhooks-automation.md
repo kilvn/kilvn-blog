@@ -119,6 +119,20 @@ class webhook
             $status = proc_close($proc); // 释放proc
         }
 
+	// 更新成功后判断是否开启opcache,如果开启则清空缓存
+	$opcache_config = opcache_get_configuration();
+	$opcache_status = $opcache_config['directives']['opcache.enable'] ?? false;
+	if ($opcache_status) {
+		// 获取php-fpm进程号
+		// ps -ef | grep php-fpm | grep 'master process' | sed -n 1p | awk '{print $2}'
+		$php_pid = shell_exec("ps -ef | grep php-fpm | grep 'master process' | awk 'NR==1' | awk '{print $2}'");
+		if ($php_pid) {
+			shell_exec("kill -USR2 {$php_pid}");
+		} else {
+			opcache_reset();
+		}
+	}
+
         return array(
             'stdout' => $stdout, // 标准输出
             'stderr' => $stderr, // 错误输出
