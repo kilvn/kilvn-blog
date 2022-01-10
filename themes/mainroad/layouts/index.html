@@ -6,16 +6,6 @@
 	</div>
 	{{- end }}
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- 个人主页-正方形 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:678px;height:90px;margin: auto auto 20px;"
-     data-ad-client="ca-pub-1936006733458386"
-     data-ad-slot="5343885232"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 	{{- $postSections := ($.Param "postSections" | default (slice "post")) }}
 	{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 	{{- range $paginator.Pages }}

@@ -10,34 +10,15 @@
 			{{- if or (not .Date.IsZero) .Params.categories }}<div class="post__meta meta">{{ partial "post_meta.html" . }}</div>{{ end }}
 		</header>
 		{{- if .Params.thumbnail }}
-		<figure class="post__thumbnail">
+		<figure class="post__thumbnail" style="height: 0 !important;width: 0 !important;margin: 0 !important;">
 			<img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}">
 		</figure>
 		{{- end }}
 		{{- partial "post_toc.html" . -}}
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- 博客-文章-头部 -->
-<ins class="adsbygoogle"
-     style="display:block;width:678px;height:90px;margin: auto auto 20px;"
-     data-ad-client="ca-pub-1936006733458386"
-     data-ad-slot="1413406754"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 		<div class="post__content clearfix">
 			{{ .Content }}
 		</div>
-
-<!-- 博客-文章底部 -->
-<ins class="adsbygoogle"
-     style="display:block;width:678px;height:90px;margin: auto auto 20px;"
-     data-ad-client="ca-pub-1936006733458386"
-     data-ad-slot="1508582004"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 		{{ partial "post_tags.html" . }}
 	</article>
