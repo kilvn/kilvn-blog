@@ -45,8 +45,8 @@ body {
 	margin: 0;
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	font-size: .875rem;
-	line-height: 1.6;
+	font-size: .975rem;
+	line-height: 1.8;
 	word-wrap: break-word;
 	background: #f7f7f7;
 	-webkit-font-smoothing: antialiased;
@@ -1382,6 +1382,8 @@ pre.prettyprint {max-width: 680px !important;}
 		float: none;
 		width: 100%;
 		margin: 0;
+		font-size: -0.925rem;
+		line-height: 1.8;
 	}
 
 	.logo {
@@ -1389,7 +1391,6 @@ pre.prettyprint {max-width: 680px !important;}
 	}
 
 	.logo__title {
-		font-size: 24px;
 		font-size: 1.5rem;
 	}
 
