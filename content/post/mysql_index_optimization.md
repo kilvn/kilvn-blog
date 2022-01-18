@@ -220,6 +220,7 @@ MySQL 最新版本是默认开启 Show Profile 功能的，旧版本默认是关
 #### 可能失效
 
 索引列上用了!=、>、>=、<、<=、or、in 等
+
 索引列上用了 is null，is not null
 
 之所以说可能失效，是因为以上这些条件有比较大的概率会造成要扫描更多的数据，数据库一旦要扫描的数据量超过 20% 到 30% 范围的时候，会直接把执行计划变成一个全表扫描，不管有没有索引，它都会直接默认变成全表扫描。因为 MySQL 认为随机扫描的数据量太大了，还不如直接来一次全表扫描。
@@ -229,3 +230,6 @@ MySQL 最新版本是默认开启 Show Profile 功能的，旧版本默认是关
 MySQL 查询优化器的预估并不是精确的，当优化器判定索引失效的情况下，我们可以通过 force index 的方式强制查询引擎走特定的索引。
 
 原文：[MySQL 索引优化 | CnSwift - 雨燕](https://cnswift.cn/posts/MySQL/mysql-index-optimization.html)
+
+相关阅读：[MYSQL索引失效的常见原因和如何用好索引](https://www.cnblogs.com/technologykai/articles/14172224.html)
+
